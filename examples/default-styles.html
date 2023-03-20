@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="module" src="assets/component-meta-nav.es.js"></script>
+
+    <!-- some component styles can be overriden by settings custom properties, here are default values -->
+    <style>
+        .default-styles {
+            --bg-color: #002838;
+            --height: 40px;
+            --menu-display: none;
+            --padding: 0 20px;
+            --text-color: rgba(255, 255, 255, 0.5);
+            --button-bg-color: #002838;
+            --hover-text-color: #002838;
+            --hover-button-bg-color: #fff;
+        }
+
+        @media screen and (min-width: 960px) {
+            .default-styles {
+                --height: 32px;
+                --menu-display: flex;
+                --padding: 0 80px;
+            }
+        }
+    </style>
+    <meta-nav class="default-styles" om-container-id="om-ok8rfqcsmxdtemfam2vy-holder" om-id="9758/1858"
+        src="assets/banner.json"></meta-nav>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module" src="assets/component-meta-nav.es.js"></script>
+
+    <style>
+        /* it is necessary to set meta-nav height expicitly to avoid CLS issues (and may be background too) */
+        meta-nav {
+            display: flex; /* this may be necessary to override default inline styling for web components (and set background color) */
+            height: 40px;
+        }
+        @media screen and (min-width: 960px) {
+            meta-nav {
+               height: 32px;
+            }
+        }
+    </style>
+
+    <!--
+        om-container-id - id of the element where the banner will be rendered (required)
+        om-id - user/account numbers, i have picked them from the reference script (required)
+        src - path to the json file with the banner data (required)
+
+        active button will be set basing on document.location.hostname value
+    -->
+    <meta-nav
+      om-container-id="om-ok8rfqcsmxdtemfam2vy-holder"
+      om-id="9758/1858"
+      src="assets/banner.json"
+    ></meta-nav>
+</body>
+</html>

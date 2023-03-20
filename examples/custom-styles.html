@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="module" src="assets/component-meta-nav.es.js"></script>
+
+    <style>
+        .custom-styles {
+            --bg-color: red;
+            --height: 80px;
+            --menu-display: none;
+            --padding: 0 40px;
+            --text-color: yellow;
+            --button-bg-color: blue;
+            --hover-text-color: white;
+            --hover-button-bg-color: black;
+        }
+
+        /* media query breakpoint can be overriden too */
+        @media screen and (min-width: 500px) {
+            .custom-styles {
+                --height: 200px;
+                --menu-display: flex;
+                --padding: 0 200px;
+            }
+        }
+    </style>
+    <meta-nav class="custom-styles" om-container-id="om-ok8rfqcsmxdtemfam2vy-holder" om-id="9758/1858"
+        src="assets/banner.json"></meta-nav>
+</body>
+
+</html>
